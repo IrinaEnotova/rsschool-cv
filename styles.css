@@ -1,0 +1,281 @@
+/* Whole page */
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+.page {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: normal;
+  color: black;
+}
+
+.page-body {
+  max-width: 1280px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #162d4d;
+  display: block;
+}
+
+.nav a {
+  padding: 16px 12px;
+  line-height: 50px;
+  color: white;
+  text-decoration: none;
+}
+.nav a:hover {
+  background-color: #aabad0;
+}
+.nav a:active {
+  color: black;
+  text-decoration: underline;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Main */
+
+main {
+  position: relative;
+  display: flex;
+}
+
+/* Left side of the page */
+
+.left-side {
+  background-color: #cfd5e3;
+  width: 30%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#photo {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+
+#contacts,
+#education,
+#courses {
+  padding: 0 20px 0 20px;
+  margin-bottom: 20px;
+}
+
+#contacts a {
+  color: #162d4d;
+  text-decoration: none;
+}
+
+.lightblue {
+  height: 20px;
+  width: 90px;
+  background-color: #e7ebef;
+}
+
+.contact-list,
+.education-list,
+.courses-list {
+  list-style: square;
+}
+
+/* Right side of the page */
+
+.right-side {
+  width: 65%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: ;
+}
+
+
+h1 {
+  font-size: 50px;
+  line-height: 40px;
+  margin: 110px 0 0 0;
+  text-align: left;
+  padding-left: 100px;
+}
+
+.title-i {
+  position: relative;
+}
+
+#lightblue-circle {
+  position: absolute;
+  left: 150px;
+  bottom: 70px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #aabad0;
+}
+
+#title-p {
+  padding-left: 100px;
+  margin-bottom: 100px;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 36px;
+  padding-left: 100px;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+#about-div {
+  position: relative;
+}
+
+#about-section {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  z-index: -1;
+}
+
+#about-myself,
+#skills,
+#code-example {
+  padding: 0 25px;
+}
+
+#skills {
+  position: relative;
+}
+
+#skills-section {
+  position: absolute;
+  top: 20px;
+  left: 110px;
+  z-index: -1;
+}
+
+#code-example {
+  position: relative;
+}
+
+#code-section {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  z-index: -1;
+}
+
+.blue {
+    height: 20px;
+    width: 90px;
+    background-color: #aabad0;
+}
+
+/* Footer */
+
+.footer {
+  flex: 0 0 auto;
+  align-items: center;
+  padding: 30px 60px 0 60px;
+  color: white;
+  background-color: #162d4d;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px 60px 20px 60px;
+}
+
+.footer-github {
+  position: relative;
+  padding-left: 40px;
+}
+
+.footer-year {
+  justify-self: center;
+}
+
+.footer-rsschool {
+  justify-self: end;
+  height: 32px;
+  padding-right: 40px;
+}
+
+/* Adaptability */
+
+@media (max-width: 850px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+  #photo {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contacts,
+  #education,
+  #courses {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+@media (max-width: 740px) {
+  #contacts,
+  #education,
+  #courses {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+
+@media (max-width: 640px) {
+  #contacts,
+  #education,
+  #courses {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .code {
+    font-size: 14px;
+  }
+}

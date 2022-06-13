@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="page" lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irina Akhanteva CV</title>
+    <link rel="icon" href="img/icons8-body-positive-female-96.png">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="page-body">
+
+    <header>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#about-myself">About myself</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#code-example">Code</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#courses">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="left-side">
+          <img id="photo" src="img/photo.jpg" width="300" height="300" alt="Photo of Irina Akhanteva">
+        <section class="contacts" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+          <ul class="contact-list">
+            <li class="contact-item">
+              Email:
+              <br>
+              <a href="mailto:irinkayashina@gmail.com">irinkayashina@gmail.com</a>
+            </li>
+            <li class="contact-item">
+              Telegram:
+              <br>
+              <a href="https://t.me/irinaenotova" target="_blank">@irinaenotova</a>
+            </li>
+            <li class="contact-item">
+              GitHub
+              <br>
+              <a href="https://github.com/IrinaEnotova" target="_blank">IrinaEnotova</a>
+            </li>
+          </ul>
+        </section>
+        <section class="education" id="education">
+          <h2 class="section-title">Education</h2>
+          <ul class="education-list">
+            <li class="education-item">
+              2008-2013
+              <br>
+              Samara State Technical University
+              <br>
+              Faculty of Food Production Technologies
+            </li>
+            <li class="education-item">
+              2012-2015
+              <br>
+              Samara State Technical University
+              <br>
+              Faculty of Distance Education (Technical Translator)
+            </li>
+          </ul>
+        </section>
+        <section class="courses" id="courses">
+          <h2 class="section-title">Courses</h2>
+          <ul class="courses-list">
+            <li class="courses-item">JavaScript Manual on learnjavascript.ru (in progress)</li>
+            <li class="courses-item">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="right-side">
+        <div class="title-i">
+          <h1 class="main-title">
+            Irina
+            <br>
+            Akhanteva
+          </h1>
+          <div id="lightblue-circle"></div>
+          <p id="title-p">Front-end developer</p>
+        </div>
+        <section class="about-myself" id="about-myself">
+          <div id="about-div">
+            <h2 class="section-title">About myself</h2>
+            <div class="blue" id="about-section"></div>
+          </div>
+          <p>Having started my career as a customer service manager in a local insurance company with minimum skills, I became profficient in working with corporate clients.</p>
+          <p>My keen interest in engineering led me to working as a stress engineer in the large center in my city, where I continued self-learning, making structural design.</p>
+          <p>I’m interested in Web Development because this occupation provides endless possibilities for professional growth, besides there’s a huge amount of free high quality resources for self-education and a large community of developers.</p>
+          <p>I believe, that my ability to learn and to gain new skills will lead me through this path of becoming a proficient Frontend Developer.</p>
+        </section>
+        <section class="skills" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <div class="blue" id="skills-section"></div>
+          <ul class="skills-list">
+            <li class="skills-item">HTML5, CSS3</li>
+            <li class="skills-item">JavaScript Basics</li>
+            <li class="skills-item">Git, GitHub</li>
+            <li class="skills-item">ANSYS</li>
+            <li class="skills-item">ABAQUS</li>
+            <li class="skills-item">
+              English - C1. The results of my online testing from
+              <a href="https://www.efset.org/cert/SNX4SY">EF SET</a>
+            </li>
+          </ul>
+        </section>
+        <section class="code-example" id="code-example">
+          <h2 class="section-title">Code example</h2>
+          <div class="blue" id="code-section"></div>
+          <pre class="code">
+function onClickBtn() {
+  let li = document.createElement('li');
+  li.textContent = document.querySelector('input').value;
+  if (li.textContent == '') {
+    alert('Заполните поле');
+  }
+  else {
+    todoList.appendChild(li);
+  }
+};
+          </pre>
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+          <a class="footer-github" href="https://github.com/IrinaEnotova" target="_blank">
+            <img src="img/icons8-github-50.png" alt="My GitHub">
+          </a>
+          <p class="footer-year">2022</p>
+          <a class="footer-rsschool" href="https://rs.school/js/" target="_blank">
+            <img src="https://rs.school/images/rs_school_js.svg" width="86" height="32" alt="Logo RS School">
+          </a>
+    </footer>
+  </body>
+</html>
